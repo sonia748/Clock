@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="241dp"
+android:layout_height="226dp"
+android:layout_marginStart="99dp"
+android:layout_marginLeft="99dp"
+android:layout_marginTop="28dp"
+android:layout_marginEnd="71dp"
+android:layout_marginRight="71dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.457"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:srcCompat="@drawable/image" />
+
+<Chronometer
+android:id="@+id/chronometer"
+android:layout_width="241dp"
+android:layout_height="70dp"
+android:layout_marginStart="125dp"
+android:layout_marginLeft="125dp"
+android:layout_marginTop="62dp"
+android:layout_marginEnd="80dp"
+android:layout_marginRight="80dp"
+android:layout_marginBottom="50dp"
+android:textColor="@android:color/holo_green_dark"
+android:textSize="30sp"
+app:layout_constraintBottom_toTopOf="@+id/btnstart"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<Button
+android:id="@+id/btnstart"
+android:layout_width="150dp"
+android:layout_height="60dp"
+android:layout_marginStart="139dp"
+android:layout_marginLeft="139dp"
+android:layout_marginEnd="122dp"
+android:layout_marginRight="122dp"
+android:layout_marginBottom="14dp"
+android:background="#88C63F"
+android:onClick="@string/start_count"
+android:text="@string/start_count"
+app:layout_constraintBottom_toTopOf="@+id/btnPause"
+app:layout_constraintEnd_toEndOf="parent"
+    
+app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+android:id="@+id/btnPause"
+android:layout_width="150dp"
+android:layout_height="60dp"
+android:layout_marginStart="139dp"
+android:layout_marginLeft="139dp"
+android:layout_marginEnd="122dp"
+android:layout_marginRight="122dp"
+android:layout_marginBottom="17dp"
+android:background="#88C63F"
+android:onClick="@string/pause"
+android:text="@string/pause"
+app:layout_constraintBottom_toTopOf="@+id/btnRestart"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+android:id="@+id/btnRestart"
+android:layout_width="150dp"
+android:layout_height="60dp"
+android:layout_marginStart="139dp"
+android:layout_marginLeft="139dp"
+android:layout_marginEnd="122dp"
+android:layout_marginRight="122dp"
+android:layout_marginBottom="69dp"
+android:background="#88C63F"
+android:text="@string/restart"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
